@@ -40,9 +40,9 @@ int main(void) {
 	printf("\n");
 	printf("\n");
 	printf("\n");
-	r_prime_notation(board);
+	u_prime_notation(board);
 	print_board(board, 12, 9); // prints the final board
-	r_prime_notation(board);
+	u_prime_notation(board);
 	print_board(board, 12, 9);
 	return 0;
 

@@ -10,7 +10,7 @@ void print_cube(char cube[][3], int num_rows, int num_cols);
 char init_board(char board[12][9], int num_rows, int num_cols);
 char print_board(char board[12][9], int num_rows, int num_cols);
 char place_cube_down(char board[12][9], char cube[][3], int first_row, int second_row, int third_row, int column1, int column2, int column3);
-void r_notation(int board[12][9]);
-void r_prime_notation(int board[12][9]);
+void u_notation(int board[12][9]);
+void u_prime_notation(int board[12][9]);
 
 #endif

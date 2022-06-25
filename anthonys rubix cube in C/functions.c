@@ -83,7 +83,7 @@ char place_cube_down(char board[12][9], char cube[][3], int first_row, int secon
 	board[third_row][column3] = cube[2][2];
 }
 
-void r_prime_notation(char board[12][9])
+void u_prime_notation(char board[12][9])
 {
 	char temp[20][20] = {"-"};
 	// getting all positions to temp variable
@@ -123,7 +123,7 @@ void r_prime_notation(char board[12][9])
 	 board[5][2] = temp[11][11];
 
 }
-void r_notation(char board[12][9])
+void u_notation(char board[12][9])
 {
 	char temp[20][20] = { "-" };
 	// getting all positions to temp variable
