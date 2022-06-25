@@ -1,1 +1,89 @@
 #include "header.h"
+
+
+
+// intilizes the 3x3 cube
+void init_cube(char cube[][3], int num_rows, int num_cols, int face)
+{
+	int row_index = 0, col_index = 0;
+	// initlizes the 3x3 cube for the face
+	for (; row_index < num_rows; ++row_index) // traversing the rows
+	{
+		for (col_index = 0; col_index < num_cols; ++col_index) // traversing the cols
+		{
+			cube[row_index][col_index] = face;
+		}
+	}
+			//sets the middle face
+			face = toupper(face);
+			cube[1][1] = face;
+			
+}
+//prints cube
+void print_cube(char cube[][3], int num_rows, int num_cols)
+{
+	int row_index = 0, col_index = 0;
+	for (; row_index < num_rows; ++row_index) // traversing the rows
+	{
+		for (col_index = 0; col_index < num_cols; ++col_index) // traversing the cols
+		{
+			printf("%-c", cube[row_index][col_index]);
+
+		}
+			putchar('\n');
+		
+	}
+	printf("---\n---\n---");
+}
+// sets the game board to "-"
+char init_board(char board[12][9], int num_rows, int num_cols)
+{
+	int row_index = 0, col_index = 0;
+	// initlizes the 9x9 cube for the face
+	for (; row_index < num_rows; ++row_index) // traversing the rows
+	{
+		for (col_index = 0; col_index < num_cols; ++col_index) // traversing the cols
+		{
+			board[row_index][col_index] = 45;
+		}
+	}
+}
+
+// displays board
+char print_board(char board[12][9], int num_rows, int num_cols)
+{
+	int row_index = 0, col_index = 0;
+
+	//printf("%3d%2d%2d%2d%2d%2d%2d%2d%2d%2d\n", 0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+	for (; row_index < num_rows; ++row_index) // traversing the rows
+	{
+		//printf("%-2d", row_index);
+		for (col_index = 0; col_index < num_cols; ++col_index) // traversing the cols
+		{
+			printf("%-2c", board[row_index][col_index]);
+		}
+
+		putchar('\n');
+	}
+}
+// places cube down
+char place_cube_down(char board[12][9], char cube[][3], int first_row, int second_row, int third_row, int column1, int column2, int column3) {
+	//first row
+	board[first_row][column1] = cube[0][0];
+	board[first_row][column2] = cube[0][1];
+	board[first_row][column3] = cube[0][2];
+	//second row
+	board[second_row][column1] = cube[1][0];
+	board[second_row][column2] = cube[1][1];
+	board[second_row][column3] = cube[1][2];
+	//third row
+	board[third_row][column1] = cube[2][0];
+	board[third_row][column2] = cube[2][1];
+	board[third_row][column3] = cube[2][2];
+}
+
+void r_notation(char board[12][9])
+{
+
+}
