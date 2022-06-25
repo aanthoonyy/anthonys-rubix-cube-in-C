@@ -1,0 +1,3 @@
+/*
+Rubix Cube in C
+*/
