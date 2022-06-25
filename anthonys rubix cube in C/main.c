@@ -35,11 +35,15 @@ int main(void) {
 	init_cube(cube, 3, 3, blue);// sets the 3x3 rubix cube to the color blue
 	place_cube_down(board, cube, 3, 4, 5, 6, 7, 8);// places the blue cube down on those cords. the first three numbers are rows, second are columns
 
-
+	
 	print_board(board, 12, 9); // prints the final board
-
-
-
+	printf("\n");
+	printf("\n");
+	printf("\n");
+	r_prime_notation(board);
+	print_board(board, 12, 9); // prints the final board
+	r_prime_notation(board);
+	print_board(board, 12, 9);
 	return 0;
 
 }//main

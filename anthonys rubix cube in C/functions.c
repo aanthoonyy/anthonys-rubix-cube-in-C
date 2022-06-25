@@ -83,7 +83,99 @@ char place_cube_down(char board[12][9], char cube[][3], int first_row, int secon
 	board[third_row][column3] = cube[2][2];
 }
 
+void r_prime_notation(char board[12][9])
+{
+	char temp[20][20] = {"-"};
+	// getting all positions to temp variable
+
+	 temp[0][0] = board[3][2]; 
+	 temp[1][1] = board[4][2];
+	 temp[2][2] = board[5][2];
+
+	 temp[3][3] = board[6][5];
+	 temp[4][4] = board[6][4];
+	 temp[5][5] = board[6][3];
+
+	 temp[6][6] = board[3][6];
+	 temp[7][7] = board[4][6];
+	 temp[8][8] = board[5][6];
+
+	 temp[9][9] = board[2][5];
+	 temp[10][10] = board[2][4];
+	 temp[11][11] = board[2][3];
+
+	// setting all temp variables to their counter clockwise counter part
+
+	 board[6][5] = temp[0][0];
+	 board[6][4] = temp[1][1];
+	 board[6][3] = temp[2][2];
+
+	 board[3][6] = temp[3][3];
+	 board[4][6] = temp[4][4];
+	 board[5][6] = temp[5][5];
+
+	 board[2][5] = temp[6][6];
+	 board[2][4] = temp[7][7];
+	 board[2][3] = temp[8][8];
+
+	 board[3][2] = temp[9][9];
+	 board[4][2] = temp[10][10];
+	 board[5][2] = temp[11][11];
+
+}
 void r_notation(char board[12][9])
 {
+	char temp[20][20] = { "-" };
+	// getting all positions to temp variable
+
+	temp[0][0] = board[3][2];
+	temp[1][1] = board[4][2];
+	temp[2][2] = board[5][2];
+
+	temp[3][3] = board[6][5];
+	temp[4][4] = board[6][4];
+	temp[5][5] = board[6][3];
+
+	temp[6][6] = board[3][6];
+	temp[7][7] = board[4][6];
+	temp[8][8] = board[5][6];
+
+	temp[9][9] = board[2][5];
+	temp[10][10] = board[2][4];
+	temp[11][11] = board[2][3];
+
+	// setting all temp variables to their  clockwise counter part
+
+	board[6][5] = temp[6][6];
+	board[6][4] = temp[7][7];
+	board[6][3] = temp[8][8];
+
+	board[3][6] = temp[9][9];
+	board[4][6] = temp[10][10];
+	board[5][6] = temp[11][11];
+
+	board[2][5] = temp[0][0];
+	board[2][4] = temp[1][1];
+	board[2][3] = temp[2][2];
+
+	board[3][2] = temp[3][3];
+	board[4][2] = temp[4][4];
+	board[5][2] = temp[5][5];
+	
+	//board[6][5] = temp[0][0];
+	//board[6][4] = temp[1][1];
+	//board[6][3] = temp[2][2];
+
+	//board[3][6] = temp[3][3];
+	//board[4][6] = temp[4][4];
+	//board[5][6] = temp[5][5];
+
+	//board[2][5] = temp[6][6];
+	//board[2][4] = temp[7][7];
+	//board[2][3] = temp[8][8];
+
+	//board[3][2] = temp[9][9];
+	//board[4][2] = temp[10][10];
+	//board[5][2] = temp[11][11];
 
 }
