@@ -161,21 +161,83 @@ void u_notation(char board[12][9])
 	board[3][2] = temp[3][3];
 	board[4][2] = temp[4][4];
 	board[5][2] = temp[5][5];
-	
-	//board[6][5] = temp[0][0];
-	//board[6][4] = temp[1][1];
-	//board[6][3] = temp[2][2];
 
-	//board[3][6] = temp[3][3];
-	//board[4][6] = temp[4][4];
-	//board[5][6] = temp[5][5];
+}
 
-	//board[2][5] = temp[6][6];
-	//board[2][4] = temp[7][7];
-	//board[2][3] = temp[8][8];
+void r_prime_notation(char board[12][9]) {
+	char temp[20][20] = { "-" };
 
-	//board[3][2] = temp[9][9];
-	//board[4][2] = temp[10][10];
-	//board[5][2] = temp[11][11];
+	temp[0][0] = board[11][5];
+	temp[1][1] = board[10][5];
+	temp[2][2] = board[9][5];
+
+	temp[3][3] = board[8][5];
+	temp[4][4] = board[7][5];
+	temp[5][5] = board[6][5];
+
+	temp[6][6] = board[5][5];
+	temp[7][7] = board[4][5];
+	temp[8][8] = board[3][5];
+
+	temp[9][9] = board[2][5];
+	temp[10][10] = board[1][5];
+	temp[11][11] = board[0][5];
+
+	// setting all temp variables to their clockwise counter part
+
+	board[11][5] = temp[11][11];
+	board[10][5] = temp[10][10];
+	board[9][5] = temp[9][9];
+
+	board[8][5] = temp[8][8];
+	board[7][5] = temp[7][7];
+	board[6][5] = temp[6][6];
+
+	board[5][5] = temp[5][5];
+	board[4][5] = temp[4][4];
+	board[3][5] = temp[3][3];
+
+	board[2][5] = temp[2][2];
+	board[1][5] = temp[1][1];
+	board[0][5] = temp[0][0];
+
+}
+
+void r_notation(char board[12][9]) {
+	char temp[20][20] = { "-" };
+	//yellow
+	temp[0][0] = board[11][5];
+	temp[1][1] = board[10][5];
+	temp[2][2] = board[9][5];
+	//red
+	temp[3][3] = board[8][5];
+	temp[4][4] = board[7][5];
+	temp[5][5] = board[6][5];
+	//white
+	temp[6][6] = board[5][5];
+	temp[7][7] = board[4][5];
+	temp[8][8] = board[3][5];
+	//orange
+	temp[9][9] = board[2][5];
+	temp[10][10] = board[1][5];
+	temp[11][11] = board[0][5];
+
+	// setting all temp variables to their clockwise counter part
+	//yellow
+	board[11][5] = temp[11][11];
+	board[10][5] = temp[10][10];
+	board[9][5] = temp[9][9];
+	//red
+	board[8][5] = temp[2][2];
+	board[7][5] = temp[1][1];
+	board[6][5] = temp[0][0];
+	//white
+	board[5][5] = temp[5][5];
+	board[4][5] = temp[4][4];
+	board[3][5] = temp[3][3];
+	//orange
+	board[2][5] = temp[8][8];
+	board[1][5] = temp[7][7];
+	board[0][5] = temp[6][6];
 
 }

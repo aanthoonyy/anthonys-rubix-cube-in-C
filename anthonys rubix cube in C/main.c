@@ -40,10 +40,19 @@ int main(void) {
 	printf("\n");
 	printf("\n");
 	printf("\n");
-	u_prime_notation(board);
-	print_board(board, 12, 9); // prints the final board
-	u_prime_notation(board);
+
+	r_notation(board);
+
 	print_board(board, 12, 9);
+
+	//printf("choose the move you'd like to do? ");
+	//char move = ' ';
+	////char *p;
+	//scanf(" %c", &move);
+
+	////move == 'R\0' ? printf("it works") : printf("doesnt work");
+	//printf("%c", move);
+
 	return 0;
 
 }//main
