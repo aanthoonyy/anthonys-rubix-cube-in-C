@@ -15,5 +15,10 @@ void u_notation(char board[12][9]);
 void u_prime_notation(char board[12][9]);
 void r_prime_notation(char board[12][9]);
 void r_notation(char board[12][9]);
+void l_notation(char board[12][9]);
+void d_notation(char board[12][9]);
+void d_prime_notation(char board[12][9]);
+
+
 
 #endif

@@ -41,7 +41,10 @@ int main(void) {
 	printf("\n");
 	printf("\n");
 
-	r_notation(board);
+	
+
+	d_prime_notation(board);
+
 
 	print_board(board, 12, 9);
 
