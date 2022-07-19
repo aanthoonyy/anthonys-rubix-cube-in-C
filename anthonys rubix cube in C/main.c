@@ -40,21 +40,58 @@ int main(void) {
 	printf("\n");
 	printf("\n");
 	printf("\n");
+	system("cls");
+	printf("Randomizing the cube");
+	printf("\n");
+	printf("\n");
 
-	
-
-	d_prime_notation(board);
-
+	for (int i = 0; i < 20; i++) {
+		switch (rand() % 9) {
+		case 0: u_prime_notation(board, 12, 9); break;
+		case 1: u_notation(board, 12, 9); break;
+		case 3: r_prime_notation(board, 12, 9); break;
+		case 4: r_notation(board, 12, 9); break;
+		case 5: l_prime_notation(board, 12, 9); break;
+		case 6: l_notation(board, 12, 9); break;
+		case 7: d_notation(board, 12, 9); break;
+		case 8: d_prime_notation(board, 12, 9); break;
+		}
+	}
 
 	print_board(board, 12, 9);
 
-	//printf("choose the move you'd like to do? ");
-	//char move = ' ';
-	////char *p;
-	//scanf(" %c", &move);
+	
+	printf("\n");
+	printf("\n");
 
-	////move == 'R\0' ? printf("it works") : printf("doesnt work");
-	//printf("%c", move);
+
+
+
+
+
+
+	int cube_notation = 0;
+	printf("enter a number for the notation you'd like to do?\n");
+	printf("---------------------------------------------\n");
+	printf("1. u	2. u'	3. r	4. r'\n");
+	printf("5. l	6. l'	7. d	8. d'\n");
+	printf("notation: ");
+	scanf("%d", cube_notation);
+
+
+
+
+	//char move[1] = {" "};
+	//char p = " ";
+
+	//scanf(" %d%d", &move);
+	//p = strchr(move, "\'");
+	//while (p == "\'")
+	//{
+	//	printf("%c", move);
+	//}
+	//move == 'R\0' ? printf("it works") : printf("doesnt work");
+	//
 
 	return 0;
 

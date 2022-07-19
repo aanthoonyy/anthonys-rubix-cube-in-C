@@ -18,7 +18,8 @@ void r_notation(char board[12][9]);
 void l_notation(char board[12][9]);
 void d_notation(char board[12][9]);
 void d_prime_notation(char board[12][9]);
-
+void randomizer(char board[12][9]);
+void help(char board[12][9]);
 
 
 #endif

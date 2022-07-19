@@ -402,3 +402,26 @@ void d_prime_notation(char board[12][9]) {
 	board[0][5] = temp[9][9];
 
 }
+
+//randomizer
+void randomizer(char board[12][9]) {
+
+
+
+}
+
+// HElP
+void help(char board[12][9]){
+
+	// 1. make daisy 
+	// 2. make white cross
+	// 3. solve the first layer
+	// 4. solve middle layer
+	// 5. create the yellow cross
+	// 6. solve the yellow face
+	// 7. solve the third face
+
+	
+
+
+	}
